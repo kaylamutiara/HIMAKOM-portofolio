@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+
+  background: black;
+  z-index: 1000;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  align-items: center;     
+}
+
+.nav-menu li {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Sans-serif', sans-serif;
+  font-weight: 600;
+  letter-spacing: -2px;
+  font-size: 1.8rem;
+  color: yellow;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: yellow;
+}
+
+#about {
+  text-align: left;   
+}
+
+.about-title {
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-name {
+  font-size: 1.9rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.about-desc {
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+/* PENUGASAN */
+.penugasan-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: #111;
+  border: 2px solid #ffd54f;
+  transition: 0.3s;
+}
+
+.task:hover {
+  transform: scale(1.02);
+  background: #222;
+}
+
+.task-info {
+  flex: 2;
+}
+
+.task-info h3 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: white;
+}
+
+.task-info p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  color: white;
+}
+
+.task-info a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffd54f;
+  text-decoration: underline;
+}
+
+.task-thumb img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: red;
+  display: flex;            
+  flex-direction: row;      
+  align-items: center;      
+  justify-content: space-between;
+  padding: 0 100px;
+  color: white;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.tagline {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.hero-image img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border: 6px solid yellow;
+  box-shadow: 10px 10px 0px black;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.hero-content p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.hero-image img:hover {
+  transform: rotate(-3deg) scale(1.05);
+  transition: 0.3s;
+}
+
+.hero h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* SECTION */
+.section {
+  padding: 120px 80px;
+  color: black;
+}
+
+.section h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+/* COLORS */
+.yellow { background: #ffeb3b; }
+.pink { background: #ff1493; }
+.blue { background: #00b0ff; }
+.green { background: #4caf50; }
+
+/* CARDS */
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: black;
+  color: white;
+  padding: 30px 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.card i {
+  font-size: 1.2em;   
+}
+
+.card:hover {
+  transform: scale(1.1) rotate(-3deg);
+  background: yellow;
+  color: black;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .section {
+    padding: 80px 30px;
+  }
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 12px 10px;
+  text-align: center;
+  font-size: 13px;
+
+}
+
+.footer-top {
+  margin: 0;
+  font-weight: 700; 
+}
+
+.footer-bottom {
+  margin: 2px 0 0 0; 
+  font-size: 11px;
+  opacity: 0.8;
+}
